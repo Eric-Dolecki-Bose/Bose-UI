@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         facebookButton.center = CGPoint(x: self.view.frame.midX, y: secondDest.frame.origin.y + secondDest.frame.height + 30)
         facebookButton.addTarget(self, action: #selector(buttonReleased(sender:)), for: .touchUpInside)
         
-        amazonButton = BoseButton(width: self.view.frame.width - 80, title: "Facebook", type: .Amazon)
+        amazonButton = BoseButton(width: self.view.frame.width - 80, title: "Amazon", type: .Amazon)
         amazonButton.center = CGPoint(x: self.view.frame.midX, y: facebookButton.frame.origin.y + facebookButton.frame.height + 30)
         amazonButton.addTarget(self, action: #selector(buttonReleased(sender:)), for: .touchUpInside)
         

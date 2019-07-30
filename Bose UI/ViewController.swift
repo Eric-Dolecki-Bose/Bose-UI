@@ -19,10 +19,14 @@ class ViewController: UIViewController {
     var secondDest:     BoseButton!
     var facebookButton: BoseButton!
     var amazonButton:   BoseButton!
+    var didFlipTheme:   Bool = false
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(brightnessChanged), name: UIScreen.brightnessDidChangeNotification, object: nil)
+        print("Screen brightness: \(UIScreen.main.brightness)")
         
         myScrollView = UIScrollView(frame: CGRect(x: 0, y: 100, width: self.view.frame.width, height: self.view.frame.height - 400))
         myScrollView.layer.borderColor = UIColor.lightGray.cgColor
@@ -71,6 +75,25 @@ class ViewController: UIViewController {
         self.view.addSubview(myScrollView)
         
         myScrollView.contentSize = CGSize(width: myScrollView.frame.width, height: amazonButton.frame.origin.y + amazonButton.frame.height + 30)
+    }
+    
+    // The range is 0.0 - 1.0
+    // The idea here is that if the screen dims automatically because
+    // the user is in a dark environment, we can assume that we could
+    // change the theme being used (to come soon). i.e. Dark mode. I do
+    // not have a good handle on the value yet though.
+    @objc func brightnessChanged() {
+        let brightness:CGFloat = UIScreen.main.brightness
+        if brightness < 0.3 {
+            if didFlipTheme == false {
+                didFlipTheme = true
+                print("I think you're in a dark room - switch to dark theme?")
+                // Switch UIApplication theme to dark mode here.
+            }
+            
+        } else {
+            didFlipTheme = false
+        }
     }
     
     @objc func buttonReleased(sender: BoseButton) {

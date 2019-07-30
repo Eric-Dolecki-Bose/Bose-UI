@@ -7,7 +7,7 @@ A collection of often-used UI elements such as buttons, etc. Hopefully will crea
 
 ### Bose Buttons
 
-#### Types:
+#### enum Types:
 - Dark
 - Light
 - Primary

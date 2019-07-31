@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     {
         super.viewDidLoad()
         
+        UIApplication.shared.isIdleTimerDisabled = true
         NotificationCenter.default.addObserver(self, selector: #selector(brightnessChanged), name: UIScreen.brightnessDidChangeNotification, object: nil)
         print("Screen brightness: \(UIScreen.main.brightness)")
         
@@ -132,6 +133,7 @@ class ViewController: UIViewController {
     // not have a good handle on the value yet though.
     @objc func brightnessChanged() {
         let brightness:CGFloat = UIScreen.main.brightness
+        print(brightness)
         if brightness < 0.3
         {
             if currentTheme == "light" {

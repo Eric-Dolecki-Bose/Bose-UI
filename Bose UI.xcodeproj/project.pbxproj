@@ -13,6 +13,20 @@
 		5F2D832922F0AF01006E8150 /* GothamSSm-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F2D832422F0AEEE006E8150 /* GothamSSm-Light.otf */; };
 		5F2D832E22F0B267006E8150 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2D832D22F0B267006E8150 /* fb.png */; };
 		5F2D833222F0B518006E8150 /* amazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2D833122F0B518006E8150 /* amazon.png */; };
+		5F2D833722F1D473006E8150 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D833622F1D473006E8150 /* Theme.swift */; };
+		5F2D833D22F1D4A2006E8150 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D833922F1D4A2006E8150 /* UIView.swift */; };
+		5F2D833E22F1D4A2006E8150 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D833A22F1D4A2006E8150 /* UIWindow.swift */; };
+		5F2D833F22F1D4A2006E8150 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D833B22F1D4A2006E8150 /* UITableViewCell.swift */; };
+		5F2D834022F1D4A2006E8150 /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D833C22F1D4A2006E8150 /* With.swift */; };
+		5F2D834922F1D4C6006E8150 /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D834222F1D4C6006E8150 /* AppStepper.swift */; };
+		5F2D834A22F1D4C6006E8150 /* AppSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D834322F1D4C6006E8150 /* AppSlider.swift */; };
+		5F2D834B22F1D4C6006E8150 /* AppLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D834422F1D4C6006E8150 /* AppLabel.swift */; };
+		5F2D834C22F1D4C6006E8150 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D834522F1D4C6006E8150 /* AppButton.swift */; };
+		5F2D834D22F1D4C6006E8150 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D834622F1D4C6006E8150 /* AppView.swift */; };
+		5F2D834E22F1D4C6006E8150 /* AppSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D834722F1D4C6006E8150 /* AppSegmentedControl.swift */; };
+		5F2D834F22F1D4C6006E8150 /* AppSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D834822F1D4C6006E8150 /* AppSwitch.swift */; };
+		5F2D835222F1D522006E8150 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D835022F1D522006E8150 /* DarkTheme.swift */; };
+		5F2D835322F1D522006E8150 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D835122F1D522006E8150 /* LightTheme.swift */; };
 		AA94127A22EF6A6A00C2FA88 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA94127922EF6A6A00C2FA88 /* Extensions.swift */; };
 		AAC6971A22EF646E00FBE406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC6971922EF646E00FBE406 /* AppDelegate.swift */; };
 		AAC6971C22EF646E00FBE406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC6971B22EF646E00FBE406 /* ViewController.swift */; };
@@ -29,6 +43,20 @@
 		5F2D832522F0AEEE006E8150 /* GothamSSm-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamSSm-Book.otf"; sourceTree = "<group>"; };
 		5F2D832D22F0B267006E8150 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
 		5F2D833122F0B518006E8150 /* amazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amazon.png; sourceTree = "<group>"; };
+		5F2D833622F1D473006E8150 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5F2D833922F1D4A2006E8150 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		5F2D833A22F1D4A2006E8150 /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		5F2D833B22F1D4A2006E8150 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		5F2D833C22F1D4A2006E8150 /* With.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
+		5F2D834222F1D4C6006E8150 /* AppStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
+		5F2D834322F1D4C6006E8150 /* AppSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSlider.swift; sourceTree = "<group>"; };
+		5F2D834422F1D4C6006E8150 /* AppLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLabel.swift; sourceTree = "<group>"; };
+		5F2D834522F1D4C6006E8150 /* AppButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		5F2D834622F1D4C6006E8150 /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		5F2D834722F1D4C6006E8150 /* AppSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSegmentedControl.swift; sourceTree = "<group>"; };
+		5F2D834822F1D4C6006E8150 /* AppSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSwitch.swift; sourceTree = "<group>"; };
+		5F2D835022F1D522006E8150 /* DarkTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		5F2D835122F1D522006E8150 /* LightTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
 		AA94127922EF6A6A00C2FA88 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AAC6971622EF646D00FBE406 /* Bose UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bose UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC6971922EF646E00FBE406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +107,51 @@
 			path = "Button Images";
 			sourceTree = "<group>";
 		};
+		5F2D833422F1D409006E8150 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				5F2D834122F1D4B6006E8150 /* Controls */,
+				5F2D833822F1D497006E8150 /* Extensions */,
+				5F2D833522F1D424006E8150 /* Themes */,
+				5F2D833622F1D473006E8150 /* Theme.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		5F2D833522F1D424006E8150 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				5F2D835022F1D522006E8150 /* DarkTheme.swift */,
+				5F2D835122F1D522006E8150 /* LightTheme.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		5F2D833822F1D497006E8150 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5F2D833B22F1D4A2006E8150 /* UITableViewCell.swift */,
+				5F2D833922F1D4A2006E8150 /* UIView.swift */,
+				5F2D833A22F1D4A2006E8150 /* UIWindow.swift */,
+				5F2D833C22F1D4A2006E8150 /* With.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5F2D834122F1D4B6006E8150 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				5F2D834522F1D4C6006E8150 /* AppButton.swift */,
+				5F2D834422F1D4C6006E8150 /* AppLabel.swift */,
+				5F2D834722F1D4C6006E8150 /* AppSegmentedControl.swift */,
+				5F2D834322F1D4C6006E8150 /* AppSlider.swift */,
+				5F2D834222F1D4C6006E8150 /* AppStepper.swift */,
+				5F2D834822F1D4C6006E8150 /* AppSwitch.swift */,
+				5F2D834622F1D4C6006E8150 /* AppView.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		AAC6970D22EF646D00FBE406 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +185,7 @@
 		AAC6972B22EF64AD00FBE406 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				5F2D833422F1D409006E8150 /* Styles */,
 				5F2D832A22F0B186006E8150 /* Images */,
 				5F2D832122F0AECC006E8150 /* Fonts */,
 				AAC6972C22EF64C600FBE406 /* BoseButton.swift */,
@@ -197,9 +271,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F2D833E22F1D4A2006E8150 /* UIWindow.swift in Sources */,
+				5F2D833F22F1D4A2006E8150 /* UITableViewCell.swift in Sources */,
 				AAC6971C22EF646E00FBE406 /* ViewController.swift in Sources */,
+				5F2D835222F1D522006E8150 /* DarkTheme.swift in Sources */,
+				5F2D835322F1D522006E8150 /* LightTheme.swift in Sources */,
 				AAC6971A22EF646E00FBE406 /* AppDelegate.swift in Sources */,
+				5F2D834022F1D4A2006E8150 /* With.swift in Sources */,
+				5F2D833722F1D473006E8150 /* Theme.swift in Sources */,
+				5F2D834A22F1D4C6006E8150 /* AppSlider.swift in Sources */,
 				AAC6972D22EF64C600FBE406 /* BoseButton.swift in Sources */,
+				5F2D834E22F1D4C6006E8150 /* AppSegmentedControl.swift in Sources */,
+				5F2D834922F1D4C6006E8150 /* AppStepper.swift in Sources */,
+				5F2D834C22F1D4C6006E8150 /* AppButton.swift in Sources */,
+				5F2D834D22F1D4C6006E8150 /* AppView.swift in Sources */,
+				5F2D833D22F1D4A2006E8150 /* UIView.swift in Sources */,
+				5F2D834F22F1D4C6006E8150 /* AppSwitch.swift in Sources */,
+				5F2D834B22F1D4C6006E8150 /* AppLabel.swift in Sources */,
 				AA94127A22EF6A6A00C2FA88 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

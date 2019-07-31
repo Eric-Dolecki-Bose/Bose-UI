@@ -8,9 +8,11 @@
 
 import UIKit
 
+// For themes, each UI component needs to be subclasses (I think).
+
 class ViewController: UIViewController {
 
-    var myScrollView: UIScrollView!
+    var myScrollView:   UIScrollView!
     var darkButton:     BoseButton!
     var lightButton:    BoseButton!
     var primaryButton:  BoseButton!
@@ -140,6 +142,17 @@ class ViewController: UIViewController {
         } else {
             didFlipTheme = false
         }
+    }
+    
+    // User-controlled theme switcher.
+    @IBAction func switchChanged(_ sender: AppSwitch) {
+        let theme: Theme
+        if sender.isOn == true {
+            theme = DarkTheme()
+        } else {
+            theme = LightTheme()
+        }
+        theme.apply(for: UIApplication.shared)
     }
     
     @objc func buttonReleased(sender: BoseButton) {

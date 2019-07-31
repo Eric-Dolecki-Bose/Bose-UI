@@ -138,7 +138,6 @@ class ViewController: UIViewController {
                     ]
         
         for item in array {
-            print(item.name, item.color)
             let view = UIView(frame: CGRect(x: 40, y: positionY, width: amazonButton.frame.width, height: 30))
             let label = UILabel(frame: CGRect(x: 10, y: 5, width: view.frame.width - 10, height: 20))
             label.textColor = UIColor.white
@@ -156,11 +155,14 @@ class ViewController: UIViewController {
         myScrollView.contentSize = CGSize(width: myScrollView.frame.width, height: positionY + 10)
     }
     
-    // The range is 0.0 - 1.0
-    // The idea here is that if the screen dims automatically because
-    // the user is in a dark environment, we can assume that we could
-    // change the theme being used (to come soon). i.e. Dark mode. I do
-    // not have a good handle on the value yet though.
+    /*
+        The range is 0.0 - 1.0 for screen brightness.
+     
+        The idea here is that if the screen dims automatically because the user is in a dark environment, we can assume
+        that we could change the theme being used (to come soon). i.e. Dark mode. I do not have a good handle on the value yet though.
+     
+        This does work if I stick my iPhone in a drawer or am in a dark room. The change takes time to happen.
+    */
     @objc func brightnessChanged() {
         let brightness:CGFloat = UIScreen.main.brightness
         print(brightness)
@@ -198,4 +200,3 @@ class ViewController: UIViewController {
         print("release.")
     }
 }
-

@@ -14,6 +14,7 @@ protocol Theme
     var barStyle: UIBarStyle { get }
     var borderWidth: CGFloat { get }
     var borderColor: UIColor { get }
+    var indicatorStyle: UIScrollView.IndicatorStyle { get }
     
     func apply(for application: UIApplication)
     func extend()
@@ -56,6 +57,10 @@ extension Theme {
         UITableView.appearance().with {
             $0.backgroundColor = backgroundColor
             $0.separatorColor = separatorColor
+        }
+        
+        UIScrollView.appearance().with {
+            $0.indicatorStyle = indicatorStyle
         }
         
         UITableViewCell.appearance().with {

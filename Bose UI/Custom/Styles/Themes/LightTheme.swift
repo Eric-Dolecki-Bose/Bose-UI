@@ -14,6 +14,8 @@ struct LightTheme: Theme {
     // For BoseButton:
     let borderWidth: CGFloat = 0.0
     let borderColor: UIColor = .white
+    
+    let indicatorStyle: UIScrollView.IndicatorStyle = .black
 }
 
 extension LightTheme {

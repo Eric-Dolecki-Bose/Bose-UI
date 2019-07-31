@@ -14,4 +14,6 @@ struct DarkTheme: Theme {
     // For BoseButton:
     let borderWidth: CGFloat = 1.0
     let borderColor: UIColor = .darkGray
+    
+    let indicatorStyle: UIScrollView.IndicatorStyle = .white
 }

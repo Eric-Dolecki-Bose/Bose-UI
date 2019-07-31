@@ -42,6 +42,13 @@ Currently supported theme colors:
 - WhiteSmoke
 - IronGray
 - Iron
+- Gainsboro
+- Light Gray
+- Silver
+- Medium Gray
+- Gray
+- Dim Gray
+- Slate Gray
 
 **Blue**
 - PictonBlue

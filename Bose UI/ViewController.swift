@@ -156,8 +156,10 @@ class ViewController: UIViewController {
         let theme: Theme
         if sender.isOn == true {
             theme = DarkTheme()
+            currentTheme = "dark"
         } else {
             theme = LightTheme()
+            currentTheme = "light"
         }
         theme.apply(for: UIApplication.shared)
     }

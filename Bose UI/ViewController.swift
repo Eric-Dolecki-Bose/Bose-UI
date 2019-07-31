@@ -83,6 +83,9 @@ class ViewController: UIViewController {
         
         // Arrays are ordered - dictionaries are not. Array of tuples.
         let array = [
+            
+                (name:"Grays", color: UIColor.black),
+                     
                      (name:"White Smoke", color: UIColor.FlatColor.Gray.WhiteSmoke),
                      (name:"Gainsboro", color: UIColor.FlatColor.Gray.Gainsboro),
                      (name:"Light Gray", color: UIColor.FlatColor.Gray.LightGray),
@@ -94,22 +97,40 @@ class ViewController: UIViewController {
                      (name:"Dim Gray", color: UIColor.FlatColor.Gray.DimGray),
                      (name:"Slate Gray", color: UIColor.FlatColor.Gray.SlateGray),
                      (name:"Almond Frost", color: UIColor.FlatColor.Gray.AlmondFrost),
+                     
+                (name:"Greens", color: UIColor.black),
+                     
                      (name:"Fern", color:UIColor.FlatColor.Green.Fern),
                      (name:"Chateau Green", color: UIColor.FlatColor.Green.ChateauGreen),
                      (name:"Mountain Meadow", color: UIColor.FlatColor.Green.MountainMeadow),
                      (name:"Persian Green", color: UIColor.FlatColor.Green.PersianGreen),
+                     
+                (name:"Blues", color: UIColor.black),
+                     
                      (name:"Picton Blue", color: UIColor.FlatColor.Blue.PictonBlue),
                      (name:"Mariner", color: UIColor.FlatColor.Blue.Mariner),
                      (name:"Curious Blue", color: UIColor.FlatColor.Blue.CuriousBlue),
                      (name:"Denim", color: UIColor.FlatColor.Blue.Denim),
                      (name:"Chambray", color: UIColor.FlatColor.Blue.Chambray),
+                     (name:"Blue Whale", color: UIColor.FlatColor.Blue.BlueWhale),
+                     
+                (name:"Violets", color: UIColor.black),
+                     
                      (name:"Wisteria", color: UIColor.FlatColor.Violet.Wisteria),
                      (name:"Blue Gem", color: UIColor.FlatColor.Violet.BlueGem),
-                     (name:"Blue Whale", color: UIColor.FlatColor.Blue.BlueWhale),
+                     
+                (name:"Yellows", color: UIColor.black),
+                     
                      (name:"Energy", color: UIColor.FlatColor.Yellow.Energy),
                      (name:"Turbo", color: UIColor.FlatColor.Yellow.Turbo),
+                     
+                (name:"Oranges", color: UIColor.black),
+                     
                      (name:"Neon Carrot", color: UIColor.FlatColor.Orange.NeonCarrot),
                      (name:"Sun", color: UIColor.FlatColor.Orange.Sun),
+                     
+                (name:"Reds", color: UIColor.black),
+                     
                      (name:"Terra Cotta", color: UIColor.FlatColor.Red.TerraCotta),
                      (name:"Cinnabar", color: UIColor.FlatColor.Red.Cinnabar),
                      (name:"Valencia", color: UIColor.FlatColor.Red.Valencia),

@@ -98,6 +98,14 @@ extension UIColor
             static let WhiteSmoke = UIColor(netHex: 0xEFEFEF)
             static let Iron = UIColor(netHex: 0xD1D5D8)
             static let IronGray = UIColor(netHex: 0x75706B)
+            
+            static let SlateGray = UIColor(netHex: 0x708090)
+            static let DimGray = UIColor(netHex: 0x696969)
+            static let MediumGray = UIColor(netHex: 0xA9A9A9)
+            static let Gray = UIColor(netHex: 0x808080)
+            static let Silver = UIColor(netHex: 0xC0C0C0)
+            static let LightGray = UIColor(netHex: 0xD3D3D3)
+            static let Gainsboro = UIColor(netHex: 0xDCDCDC)
         }
     }
 }

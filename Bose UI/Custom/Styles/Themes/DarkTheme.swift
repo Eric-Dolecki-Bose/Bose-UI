@@ -10,4 +10,8 @@ struct DarkTheme: Theme {
     let secondaryLabelColor: UIColor = .lightGray
     let subtleLabelColor: UIColor = .darkGray
     let barStyle: UIBarStyle = .black
+    
+    // For BoseButton:
+    let borderWidth: CGFloat = 1.0
+    let borderColor: UIColor = .darkGray
 }

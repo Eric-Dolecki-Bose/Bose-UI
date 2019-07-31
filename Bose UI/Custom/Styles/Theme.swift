@@ -12,6 +12,9 @@ protocol Theme
     var secondaryLabelColor: UIColor { get }
     var subtleLabelColor: UIColor { get }
     var barStyle: UIBarStyle { get }
+    var borderWidth: CGFloat { get }
+    var borderColor: UIColor { get }
+    
     func apply(for application: UIApplication)
     func extend()
 }
@@ -21,6 +24,13 @@ extension Theme {
     
     func apply(for application: UIApplication) {
         application.keyWindow?.tintColor = tint
+        
+        // Don't think we can query myType
+        BoseButton.appearance().with {
+            //if $0.myType == .Light {
+            $0.borderColor = borderColor
+            $0.borderWidth = borderWidth
+        }
         
         UITabBar.appearance().with {
             $0.barStyle = barStyle

@@ -80,49 +80,58 @@ class ViewController: UIViewController {
         // Place colored views to show off the theme colors.
         
         var positionY = amazonButton.frame.origin.y + amazonButton.frame.height + 20
-        let dictionary: [String: UIColor] = [
-            "Fern" : UIColor.FlatColor.Green.Fern,
-            "Mountain Meadow" : UIColor.FlatColor.Green.MountainMeadow,
-            "Chateau Green" : UIColor.FlatColor.Green.ChateauGreen,
-            "Persian Green" : UIColor.FlatColor.Green.PersianGreen,
-            "Almond Frost" : UIColor.FlatColor.Gray.AlmondFrost,
-            "White Smoke" : UIColor.FlatColor.Gray.WhiteSmoke,
-            "Iron Gray" : UIColor.FlatColor.Gray.IronGray,
-            "Iron" : UIColor.FlatColor.Gray.Iron,
-            "Picton Blue" : UIColor.FlatColor.Blue.PictonBlue,
-            "Mariner" : UIColor.FlatColor.Blue.Mariner,
-            "Curious Blue" : UIColor.FlatColor.Blue.CuriousBlue,
-            "Denim" : UIColor.FlatColor.Blue.Denim,
-            "Wisternia" : UIColor.FlatColor.Violet.Wisteria,
-            "Blue Gem" : UIColor.FlatColor.Violet.BlueGem,
-            "Chambray" : UIColor.FlatColor.Blue.Chambray,
-            "Blue Whale" : UIColor.FlatColor.Blue.BlueWhale,
-            "Energy" : UIColor.FlatColor.Yellow.Energy,
-            "Turbo" : UIColor.FlatColor.Yellow.Turbo,
-            "Neon Carrot" : UIColor.FlatColor.Orange.NeonCarrot,
-            "Sun" : UIColor.FlatColor.Orange.Sun,
-            "Terra Cotta" : UIColor.FlatColor.Red.TerraCotta,
-            "Valencia" : UIColor.FlatColor.Red.Valencia,
-            "Cinnabar" : UIColor.FlatColor.Red.Cinnabar,
-            "Well Read" : UIColor.FlatColor.Red.WellRead
-        ]
         
-        for (key, value) in dictionary {
-            //print("\(key): \(value)")
+        // Arrays are ordered - dictionaries are not. Array of tuples.
+        let array = [
+                     (name:"White Smoke", color: UIColor.FlatColor.Gray.WhiteSmoke),
+                     (name:"Gainsboro", color: UIColor.FlatColor.Gray.Gainsboro),
+                     (name:"Light Gray", color: UIColor.FlatColor.Gray.LightGray),
+                     (name:"Iron", color: UIColor.FlatColor.Gray.Iron),
+                     (name:"Silver", color: UIColor.FlatColor.Gray.Silver),
+                     (name:"Medium Gray", color: UIColor.FlatColor.Gray.MediumGray),
+                     (name:"Gray", color: UIColor.FlatColor.Gray.Gray),
+                     (name:"Iron Gray", color: UIColor.FlatColor.Gray.IronGray),
+                     (name:"Dim Gray", color: UIColor.FlatColor.Gray.DimGray),
+                     (name:"Slate Gray", color: UIColor.FlatColor.Gray.SlateGray),
+                     (name:"Almond Frost", color: UIColor.FlatColor.Gray.AlmondFrost),
+                     (name:"Fern", color:UIColor.FlatColor.Green.Fern),
+                     (name:"Chateau Green", color: UIColor.FlatColor.Green.ChateauGreen),
+                     (name:"Mountain Meadow", color: UIColor.FlatColor.Green.MountainMeadow),
+                     (name:"Persian Green", color: UIColor.FlatColor.Green.PersianGreen),
+                     (name:"Picton Blue", color: UIColor.FlatColor.Blue.PictonBlue),
+                     (name:"Mariner", color: UIColor.FlatColor.Blue.Mariner),
+                     (name:"Curious Blue", color: UIColor.FlatColor.Blue.CuriousBlue),
+                     (name:"Denim", color: UIColor.FlatColor.Blue.Denim),
+                     (name:"Chambray", color: UIColor.FlatColor.Blue.Chambray),
+                     (name:"Wisteria", color: UIColor.FlatColor.Violet.Wisteria),
+                     (name:"Blue Gem", color: UIColor.FlatColor.Violet.BlueGem),
+                     (name:"Blue Whale", color: UIColor.FlatColor.Blue.BlueWhale),
+                     (name:"Energy", color: UIColor.FlatColor.Yellow.Energy),
+                     (name:"Turbo", color: UIColor.FlatColor.Yellow.Turbo),
+                     (name:"Neon Carrot", color: UIColor.FlatColor.Orange.NeonCarrot),
+                     (name:"Sun", color: UIColor.FlatColor.Orange.Sun),
+                     (name:"Terra Cotta", color: UIColor.FlatColor.Red.TerraCotta),
+                     (name:"Cinnabar", color: UIColor.FlatColor.Red.Cinnabar),
+                     (name:"Valencia", color: UIColor.FlatColor.Red.Valencia),
+                     (name:"Well Read", color: UIColor.FlatColor.Red.WellRead)
+                    ]
+        
+        for item in array {
+            print(item.name, item.color)
             let view = UIView(frame: CGRect(x: 40, y: positionY, width: amazonButton.frame.width, height: 30))
             let label = UILabel(frame: CGRect(x: 10, y: 5, width: view.frame.width - 10, height: 20))
             label.textColor = UIColor.white
-            if key == "Turbo" || key == "Energy" || key == "White Smoke" || key == "Iron" {
+            if item.name == "Turbo" || item.name == "Energy" || item.name == "White Smoke" || item.name == "Iron" ||
+                item.name == "Gainsboro" || item.name == "Light Gray" || item.name == "Silver" {
                 label.textColor = UIColor.darkGray
             }
             label.font = UIFont(name: "GothamSSm-Bold", size: 9.0)
-            label.text = key.uppercased()
+            label.text = item.name.uppercased()
             view.addSubview(label)
-            view.backgroundColor = value
+            view.backgroundColor = item.color
             myScrollView.addSubview(view)
             positionY += 31
         }
-        
         myScrollView.contentSize = CGSize(width: myScrollView.frame.width, height: positionY + 10)
     }
     

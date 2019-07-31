@@ -10,6 +10,10 @@ struct LightTheme: Theme {
     let secondaryLabelColor: UIColor = .darkGray
     let subtleLabelColor: UIColor = .lightGray
     let barStyle: UIBarStyle = .default
+    
+    // For BoseButton:
+    let borderWidth: CGFloat = 0.0
+    let borderColor: UIColor = .white
 }
 
 extension LightTheme {

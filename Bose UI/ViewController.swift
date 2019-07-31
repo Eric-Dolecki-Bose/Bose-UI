@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     var secondDest:     BoseButton!
     var facebookButton: BoseButton!
     var amazonButton:   BoseButton!
-    var didFlipTheme:   Bool = false
+    var currentTheme = "light"
     
     override func viewDidLoad()
     {
@@ -132,15 +132,20 @@ class ViewController: UIViewController {
     // not have a good handle on the value yet though.
     @objc func brightnessChanged() {
         let brightness:CGFloat = UIScreen.main.brightness
-        if brightness < 0.3 {
-            if didFlipTheme == false {
-                didFlipTheme = true
-                print("I think you're in a dark room - switch to dark theme?")
-                // Switch UIApplication theme to dark mode here.
+        if brightness < 0.3
+        {
+            if currentTheme == "light" {
+                currentTheme = "dark"
+                let theme = DarkTheme()
+                theme.apply(for: UIApplication.shared)
             }
             
         } else {
-            didFlipTheme = false
+            if currentTheme == "dark" {
+                currentTheme = "light"
+                let theme = LightTheme()
+                theme.apply(for: UIApplication.shared)
+            }
         }
     }
     

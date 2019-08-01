@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     var facebookButton: BoseButton!
     var amazonButton:   BoseButton!
     var currentTheme = "light"
+    var upDetectionDot: BoseARDirectionalMark!
     
     override func viewDidLoad()
     {
@@ -30,6 +31,10 @@ class ViewController: UIViewController {
         UIApplication.shared.isIdleTimerDisabled = true
         NotificationCenter.default.addObserver(self, selector: #selector(brightnessChanged), name: UIScreen.brightnessDidChangeNotification, object: nil)
         print("Screen brightness: \(UIScreen.main.brightness)")
+        
+        upDetectionDot = BoseARDirectionalMark(direction: .Up)
+        upDetectionDot.center = CGPoint(x: self.view.frame.width / 2, y: 70)
+        //upDetectionDot.wasLookedAt()
         
         myScrollView = UIScrollView(frame: CGRect(x: 0, y: 100, width: self.view.frame.width, height: self.view.frame.height - 350))
         myScrollView.layer.borderColor = UIColor.lightGray.cgColor
@@ -75,6 +80,7 @@ class ViewController: UIViewController {
         myScrollView.addSubview(secondDest)
         myScrollView.addSubview(facebookButton)
         myScrollView.addSubview(amazonButton)
+        self.view.addSubview(upDetectionDot)
         self.view.addSubview(myScrollView)
         
         // Place colored views to show off the theme colors.

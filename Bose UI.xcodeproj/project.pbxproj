@@ -27,6 +27,7 @@
 		5F2D834F22F1D4C6006E8150 /* AppSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D834822F1D4C6006E8150 /* AppSwitch.swift */; };
 		5F2D835222F1D522006E8150 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D835022F1D522006E8150 /* DarkTheme.swift */; };
 		5F2D835322F1D522006E8150 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D835122F1D522006E8150 /* LightTheme.swift */; };
+		5F2D835522F3530A006E8150 /* BoseARDirectionalMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D835422F3530A006E8150 /* BoseARDirectionalMark.swift */; };
 		AA94127A22EF6A6A00C2FA88 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA94127922EF6A6A00C2FA88 /* Extensions.swift */; };
 		AAC6971A22EF646E00FBE406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC6971922EF646E00FBE406 /* AppDelegate.swift */; };
 		AAC6971C22EF646E00FBE406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC6971B22EF646E00FBE406 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		5F2D834822F1D4C6006E8150 /* AppSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSwitch.swift; sourceTree = "<group>"; };
 		5F2D835022F1D522006E8150 /* DarkTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
 		5F2D835122F1D522006E8150 /* LightTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		5F2D835422F3530A006E8150 /* BoseARDirectionalMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoseARDirectionalMark.swift; sourceTree = "<group>"; };
 		AA94127922EF6A6A00C2FA88 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AAC6971622EF646D00FBE406 /* Bose UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bose UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC6971922EF646E00FBE406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				5F2D832A22F0B186006E8150 /* Images */,
 				5F2D832122F0AECC006E8150 /* Fonts */,
 				AAC6972C22EF64C600FBE406 /* BoseButton.swift */,
+				5F2D835422F3530A006E8150 /* BoseARDirectionalMark.swift */,
 				AA94127922EF6A6A00C2FA88 /* Extensions.swift */,
 			);
 			path = Custom;
@@ -280,6 +283,7 @@
 				5F2D834022F1D4A2006E8150 /* With.swift in Sources */,
 				5F2D833722F1D473006E8150 /* Theme.swift in Sources */,
 				5F2D834A22F1D4C6006E8150 /* AppSlider.swift in Sources */,
+				5F2D835522F3530A006E8150 /* BoseARDirectionalMark.swift in Sources */,
 				AAC6972D22EF64C600FBE406 /* BoseButton.swift in Sources */,
 				5F2D834E22F1D4C6006E8150 /* AppSegmentedControl.swift in Sources */,
 				5F2D834922F1D4C6006E8150 /* AppStepper.swift in Sources */,

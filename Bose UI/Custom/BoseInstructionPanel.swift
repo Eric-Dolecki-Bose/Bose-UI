@@ -59,5 +59,32 @@ class BoseInstructionPanel: UIView {
         self.removeFromSuperview()
     }
     
+    public func updatePanel(title: String) {
+        myTitle = title
+        myTitleLabel.text = myTitle
+    }
+    
+    public func updatePanel(message: String) {
+        myMessage = message
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = 5
+        let attributes = [NSAttributedString.Key.paragraphStyle: style,
+                          NSAttributedString.Key.font: UIFont(name: "GothamSSm-Book", size: 12.5)!,
+                          NSAttributedString.Key.kern: -0.25 ] as [NSAttributedString.Key : Any]
+        myMessageView.attributedText = NSAttributedString(string: myMessage, attributes: attributes as [NSAttributedString.Key : Any])
+    }
+    
+    public func updatePanel(title: String, message: String) {
+        myTitle = title
+        myTitleLabel.text = myTitle
+        myMessage = message
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = 5
+        let attributes = [NSAttributedString.Key.paragraphStyle: style,
+                          NSAttributedString.Key.font: UIFont(name: "GothamSSm-Book", size: 12.5)!,
+                          NSAttributedString.Key.kern: -0.25 ] as [NSAttributedString.Key : Any]
+        myMessageView.attributedText = NSAttributedString(string: myMessage, attributes: attributes as [NSAttributedString.Key : Any])
+    }
+    
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 }

@@ -90,8 +90,7 @@ class ViewController: UIViewController {
         boseInstruct.center = CGPoint(x: self.view.frame.midX, y: 0)
         boseInstruct.frame.origin.y = amazonButton.frame.origin.y + amazonButton.frame.height + 20
         myScrollView.addSubview(boseInstruct)
-        
-        
+                
         var positionY = boseInstruct.frame.origin.y + boseInstruct.frame.height + 20
         
         // Arrays are ordered - dictionaries are not. Array of tuples.

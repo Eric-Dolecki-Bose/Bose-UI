@@ -21,8 +21,9 @@ class ViewController: UIViewController {
     var secondDest:     BoseButton!
     var facebookButton: BoseButton!
     var amazonButton:   BoseButton!
-    var currentTheme = "light"
+    var currentTheme =  "light"
     var upDetectionDot: BoseARDirectionalMark!
+    var boseInstruct:   BoseInstructionPanel!
     
     override func viewDidLoad()
     {
@@ -85,7 +86,13 @@ class ViewController: UIViewController {
         
         // Place colored views to show off the theme colors.
         
-        var positionY = amazonButton.frame.origin.y + amazonButton.frame.height + 20
+        boseInstruct = BoseInstructionPanel(width: amazonButton.frame.width + 20, title: "Perform AR Input", message: "Tap and hold for 1 second to control your AR app.")
+        boseInstruct.center = CGPoint(x: self.view.frame.midX, y: 0)
+        boseInstruct.frame.origin.y = amazonButton.frame.origin.y + amazonButton.frame.height + 20
+        myScrollView.addSubview(boseInstruct)
+        
+        
+        var positionY = boseInstruct.frame.origin.y + boseInstruct.frame.height + 20
         
         // Arrays are ordered - dictionaries are not. Array of tuples.
         let array = [

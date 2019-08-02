@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         
         // Testing this.
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
-            self.foo.reset()
+            self.foo.reset(withFade: true)
         })
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 7.0, execute: {

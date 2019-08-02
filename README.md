@@ -74,49 +74,17 @@ let color = UIColor.FlatColor.Blue.Denim
 
 Currently supported theme colors:
 
-**Green**
-- Fern
-- MountainMeadow
-- ChateauGreen
-- PersianGreen
+| **Color**  |                |              |              |              |           |           |
+|------------|----------------|--------------|--------------|--------------|-----------|-----------|
+| **Green**  | MountainMeadow | ChateauGreen | PersianGreen | PersianGreen |           |           |
+| **Gray**   | AlmondFrost    | WhiteSmoke   | IronGray     | Iron         | Gainsboro | LightGray |
+|            | Silver         | MediumGray   | Gray         | DimGray      | SlateGray |           |
+| **Blue**   | PictonBlue     | Mariner      | CuriousBlue  | Denim        | Chambray  | BlueWhale |
+| **Violet** | Wisteria       | BlueGreen    |              |              |           |           |
+| **Yellow** | Energy         | Turbo        |              |              |           |           |
+| **Orange** | NeonCarrot     | Sun          |              |              |           |           |
+| **Red**    | TerraCotta     | Valencia     | Cinnabar     | WellRead     |           |           |
 
-**Gray**
-- AlmondFrost
-- WhiteSmoke
-- IronGray
-- Iron
-- Gainsboro
-- Light Gray
-- Silver
-- Medium Gray
-- Gray
-- Dim Gray
-- Slate Gray
-
-**Blue**
-- PictonBlue
-- Mariner
-- CuriousBlue
-- Denim
-- Chambray
-- BlueWhale
-
-**Violet**
-- Wisteria
-- BlueGem
-
-**Yellow**
-- Energy
-- Turbo
-
-**Orange**
-- NeonCarrot
-- Sun
-
-**Red**
-- TerraCotta
-- Valencia
-- Cinnabar
-- WellRead
 ----
+
 ![app](./bose-ui-app.png)

@@ -44,7 +44,7 @@ upDetectionDot.wasLookedAt()
 ### CheckMarkDotAnimated
 ![green check](./green-check.png)
 
-Like the CheckMarkDot class below, but it will animate draw using another color if you'd like. You must set the `animated` Boolean before you call animate on it because it sets up a `CAShapeLayer`. Can revist this in the future and streamline it so that animate calls take care of that instead. This checkmark is slightly thicker than CheckMarkDot, has a transparent background, and you can draw it whatever size you'd like. You can also control the speed of the animation using `TimeInterval`.
+Like the CheckMarkDot class below, but it will animate draw using another color if you'd like. You must set the `animated` Boolean before you call animate on it because it sets up a `CAShapeLayer`. Can revist this in the future and streamline it so that animate calls take care of that instead. This checkmark is slightly thicker than CheckMarkDot, has a transparent background, and you can draw it whatever size you'd like. You can also control the speed of the animation using `TimeInterval`. Reset now takes an optional parameter/argument of `withFade`, a Boolean. So you can get a quick snap, or a 0.5s fade out of the animationColor.
 
 ```swift
 foo = CheckMarkDotAnimated(frame: CGRect(x: 0, y: 0, width: 40, height: 40),

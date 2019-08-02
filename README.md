@@ -8,6 +8,7 @@ A collection of often-used UI elements such as buttons, etc. Hopefully will crea
 ## Contents:
 - [Bose Buttons](#bose-buttons)
 - [BoseARDirectionalMark](#boseardirectionalmark)
+- [CheckMarkDotAnimated](#checkmarkdotanimated)
 - [CheckMarkDot](#checkmarkdot)
 - [BoseInstructionalPanel](#boseinstructionPanel)
 - [Screen Brightness / Theme Switching](#screen-brightness--theme-switching)

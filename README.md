@@ -26,6 +26,19 @@ upDetectionDot.center = CGPoint(x: self.view.frame.width / 2, y: 70)
 upDetectionDot.wasLookedAt()
 ```
 
+### CheckMarkDot
+Meant as a visual indicator that an operation was successful. It's essentially a circle with a checkmark inside it. You can adjust the background color, the checkmark color, and whether or not the circle gets a light gray border or not. Very simple.
+
+```swift
+// Customized.
+let check1 = CheckMarkDot(backgroundColor: UIColor.FlatColor.Red.WellRead, 
+                          useBorder: false,
+                          checkmarkColor: UIColor.FlatColor.Red.TerraCotta)
+// Uses defaults.
+let check2 = CheckMarkDot()
+```
+
+
 ### BoseInstructionPanel
 When you need to ask the user for input, we have a panel that should display at the bottom of the screen when needed. Not theme-supported yet. Simple title and message.
 

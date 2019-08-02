@@ -96,7 +96,7 @@ class ViewController: UIViewController {
         checkmark.center = CGPoint(x: self.view.frame.midX, y: 0)
         checkmark.frame.origin.y = boseInstruct.frame.origin.y + boseInstruct.frame.height + 20
         
-        let sampleCheck = CheckMarkDot(backgroundColor: UIColor.FlatColor.Red.Valencia, useBorder: false)
+        let sampleCheck = CheckMarkDot(backgroundColor: UIColor.FlatColor.Red.WellRead, useBorder: false, checkmarkColor: UIColor.FlatColor.Red.TerraCotta)
         sampleCheck.center = CGPoint(x: checkmark.center.x + checkmark.frame.width + 10, y: checkmark.center.y)
         
         myScrollView.addSubview(checkmark)

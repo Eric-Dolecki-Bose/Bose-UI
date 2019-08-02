@@ -11,7 +11,7 @@ import UIKit
 class CheckMarkDot: UIView {
 
     // The default value is very light white. Can supply your own of course.
-    init(backgroundColor: UIColor = UIColor.FlatColor.Gray.WhiteSmoke, useBorder: Bool = true)
+    init(backgroundColor: UIColor = UIColor.FlatColor.Gray.WhiteSmoke, useBorder: Bool = true, checkmarkColor: UIColor = UIColor.black)
     {
         let frame = CGRect(x: 0, y: 0, width: 60, height: 60)
         super.init(frame: frame)
@@ -31,7 +31,7 @@ class CheckMarkDot: UIView {
         
         // Apply the path to a shape layer.
         let checkLayer = CAShapeLayer()
-        checkLayer.strokeColor = UIColor.black.cgColor
+        checkLayer.strokeColor = checkmarkColor.cgColor
         checkLayer.lineWidth = 4
         checkLayer.path = check.cgPath
         checkLayer.fillColor = UIColor.clear.cgColor

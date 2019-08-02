@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     var currentTheme =  "light"
     var upDetectionDot: BoseARDirectionalMark!
     var boseInstruct:   BoseInstructionPanel!
+    var checkmark:      CheckMarkDot!
     
     override func viewDidLoad()
     {
@@ -90,8 +91,13 @@ class ViewController: UIViewController {
         boseInstruct.center = CGPoint(x: self.view.frame.midX, y: 0)
         boseInstruct.frame.origin.y = amazonButton.frame.origin.y + amazonButton.frame.height + 20
         myScrollView.addSubview(boseInstruct)
-                
-        var positionY = boseInstruct.frame.origin.y + boseInstruct.frame.height + 20
+        
+        checkmark = CheckMarkDot()
+        checkmark.center = CGPoint(x: self.view.frame.midX, y: 0)
+        checkmark.frame.origin.y = boseInstruct.frame.origin.y + boseInstruct.frame.height + 20
+        myScrollView.addSubview(checkmark)
+        
+        var positionY = checkmark.frame.origin.y + checkmark.frame.height + 20
         
         // Arrays are ordered - dictionaries are not. Array of tuples.
         let array = [

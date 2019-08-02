@@ -12,8 +12,8 @@ class BoseInstructionPanel: UIView {
 
     public var myTitle: String!
     public var myMessage: String!
-    private var myTitleLabel: UILabel!
-    private var myMessageView: UITextView!
+    public var myTitleLabel: UILabel!
+    public var myMessageView: UITextView!
     
     init(width: CGFloat, title: String, message: String) {
         let frame = CGRect(x: 0, y: 0, width: width, height: 250)

@@ -16,11 +16,14 @@ struct LightTheme: Theme {
     let borderColor: UIColor = .white
     
     let indicatorStyle: UIScrollView.IndicatorStyle = .black
+    
+    
 }
 
 extension LightTheme {
     
     func extend() {
+        
         UIImageView.appearance(whenContainedInInstancesOf: [UITableViewCell.self]).with {
             $0.borderColor = separatorColor
             $0.borderWidth = 1

@@ -83,14 +83,14 @@ class CheckMarkDotAnimated: UIView, CAAnimationDelegate {
             self.animatedLayer?.removeFromSuperlayer()
             self.configureView()
         } else {
+            animatedLayer?.removeAllAnimations()
             let animcolor = CABasicAnimation(keyPath: "strokeColor")
             animcolor.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
             animcolor.fromValue         = animatedLayerColor.cgColor
             animcolor.toValue           = UIColor.clear.cgColor
             animcolor.duration          = 0.5
             animcolor.delegate = self
-            animatedLayer?.strokeEnd = 1
-            animatedLayer?.removeAllAnimations()
+            animatedLayer?.strokeEnd = 0
             animatedLayer!.add(animcolor, forKey: "strokeColor")
         }
     }

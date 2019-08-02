@@ -184,7 +184,7 @@ class ViewController: UIViewController {
     @objc func brightnessChanged() {
         let brightness:CGFloat = UIScreen.main.brightness
         print(brightness)
-        if brightness < 0.3
+        if brightness < 0.35
         {
             if currentTheme == "light" {
                 currentTheme = "dark"
@@ -212,6 +212,7 @@ class ViewController: UIViewController {
             currentTheme = "light"
         }
         theme.apply(for: UIApplication.shared)
+        // Can apply custom stuff here for themes elements too.
     }
     
     @objc func buttonReleased(sender: BoseButton) {

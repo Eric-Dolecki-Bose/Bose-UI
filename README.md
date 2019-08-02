@@ -52,10 +52,21 @@ foo = CheckMarkDotAnimated(frame: CGRect(x: 0, y: 0, width: 40, height: 40),
                            animatedColor: UIColor.FlatColor.Green.Fern)
 foo.center = CGPoint(x: upDetectionDot.center.x + 50, y: upDetectionDot.center.y)
 self.view.addSubview(foo)
+
 DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
     //foo flag must be set to true before animating.
     self.foo.animated = true
     self.foo.animate(duration: 0.6)
+})
+
+DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+    self.foo.reset()
+})
+        
+DispatchQueue.main.asyncAfter(deadline: .now() + 7.0, execute: {
+    self.foo.animatedLayerColor = UIColor.FlatColor.Blue.Denim
+    self.foo.animated = true
+    self.foo.animate(duration: 2.0)
 })
 ```
 

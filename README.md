@@ -17,6 +17,8 @@ A collection of often-used UI elements such as buttons, etc. Hopefully will crea
 
 ### Bose Buttons
 
+These buttons are typical of the Bose style - rounded ends with the simple colors. There are also two new types I hadn't seen before that I assume allow for logging into a Bose account with Facebook and also Amazon accounts. The touch produces a subtle shrinking animation and color changes within the class itself (handled for the developer). 
+
 #### enum Types:
 - Dark
 - Light

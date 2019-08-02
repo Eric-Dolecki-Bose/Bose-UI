@@ -40,6 +40,24 @@ upDetectionDot.center = CGPoint(x: self.view.frame.width / 2, y: 70)
 upDetectionDot.wasLookedAt()
 ```
 
+### CheckMarkDotAnimated
+![green check](./green-check.png)
+
+Like the CheckMarkDot class below, but it will animate draw using another color if you'd like. You must set the `animated` Boolean before you call animate on it because it sets up a `CAShapeLayer`. Can revist this in the future and streamline it so that animate calls take care of that instead. This checkmark is slightly thicker than CheckMarkDot, has a transparent background, and you can draw it whatever size you'd like. You can also control the speed of the animation using `TimeInterval`.
+
+```swift
+foo = CheckMarkDotAnimated(frame: CGRect(x: 0, y: 0, width: 40, height: 40),
+                           initialColor: UIColor.FlatColor.Gray.Iron,
+                           animatedColor: UIColor.FlatColor.Green.Fern)
+foo.center = CGPoint(x: upDetectionDot.center.x + 50, y: upDetectionDot.center.y)
+self.view.addSubview(foo)
+DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+    //foo flag must be set to true before animating.
+    self.foo.animated = true
+    self.foo.animate(duration: 0.6)
+})
+```
+
 ### CheckMarkDot
 ![checks](./checks.png)
 

@@ -10,7 +10,7 @@ A collection of often-used UI elements such as buttons, etc. Hopefully will crea
 - [BoseARDirectionalMark](#boseardirectionalmark)
 - [CheckMarkDot](#checkmarkdot)
 - [BoseInstructionalPanel](#boseinstructionPanel)
-- [Screen Brightness / Theme Switching](#screen-brightness-/-theme-switching)
+- [Screen Brightness / Theme Switching](#screen-brightness--theme-switching)
 - [Theme Colors](#theme-colors)
 
 ----

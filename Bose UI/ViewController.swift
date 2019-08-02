@@ -56,6 +56,7 @@ class ViewController: UIViewController {
         })
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 7.0, execute: {
+            self.foo.animatedLayerColor = UIColor.FlatColor.Blue.Denim
             self.foo.animated = true
             self.foo.animate(duration: 2.0)
         })

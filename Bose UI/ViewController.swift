@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     var secondDest:     BoseButton!
     var facebookButton: BoseButton!
     var amazonButton:   BoseButton!
-    var currentTheme =  "light"
+    var currentTheme =  "dark"
     var upDetectionDot: BoseARDirectionalMark!
     var boseInstruct:   BoseInstructionPanel!
     var checkmark:      CheckMarkDot!
@@ -95,7 +95,12 @@ class ViewController: UIViewController {
         checkmark = CheckMarkDot()
         checkmark.center = CGPoint(x: self.view.frame.midX, y: 0)
         checkmark.frame.origin.y = boseInstruct.frame.origin.y + boseInstruct.frame.height + 20
+        
+        let sampleCheck = CheckMarkDot(backgroundColor: UIColor.FlatColor.Red.Valencia, useBorder: false)
+        sampleCheck.center = CGPoint(x: checkmark.center.x + checkmark.frame.width + 10, y: checkmark.center.y)
+        
         myScrollView.addSubview(checkmark)
+        myScrollView.addSubview(sampleCheck)
         
         var positionY = checkmark.frame.origin.y + checkmark.frame.height + 20
         

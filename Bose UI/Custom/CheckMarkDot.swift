@@ -10,13 +10,17 @@ import UIKit
 
 class CheckMarkDot: UIView {
 
-    init() {
+    // The default value is very light white. Can supply your own of course.
+    init(backgroundColor: UIColor = UIColor.FlatColor.Gray.WhiteSmoke, useBorder: Bool = true)
+    {
         let frame = CGRect(x: 0, y: 0, width: 60, height: 60)
         super.init(frame: frame)
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = backgroundColor
         self.layer.cornerRadius = self.frame.width / 2
-        self.layer.borderColor = UIColor.FlatColor.Gray.WhiteSmoke.cgColor
-        self.layer.borderWidth = 1.0
+        if useBorder {
+            self.layer.borderColor = UIColor.FlatColor.Gray.WhiteSmoke.cgColor
+            self.layer.borderWidth = 1.0
+        }
         self.layer.masksToBounds = true
         
         // Create the path.

@@ -16,8 +16,6 @@ struct LightTheme: Theme {
     let borderColor: UIColor = .white
     
     let indicatorStyle: UIScrollView.IndicatorStyle = .black
-    
-    
 }
 
 extension LightTheme {

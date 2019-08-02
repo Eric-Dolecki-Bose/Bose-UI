@@ -26,12 +26,8 @@ extension Theme {
     func apply(for application: UIApplication) {
         application.keyWindow?.tintColor = tint
         
-        // Don't think we can query myType
-        BoseButton.appearance().with {
-            //if $0.myType == .Light {
-            $0.borderColor = borderColor
-            $0.borderWidth = borderWidth
-        }
+        
+        
         
         UITabBar.appearance().with {
             $0.barStyle = barStyle
@@ -135,6 +131,19 @@ extension Theme {
         AppSwitch.appearance(whenContainedInInstancesOf: [AppView.self, AppView.self]).with {
             $0.tintColor = secondaryTint
             $0.onTintColor = secondaryTint
+        }
+        
+        // Don't think we can query myType
+        BoseButton.appearance().with {
+            //if $0.myType == .Light {
+            $0.borderColor = borderColor
+            $0.borderWidth = borderWidth
+        }
+        
+        // Not doing anything at the moment...
+        BoseInstructionPanel.appearance().with {
+            $0.backgroundColor = backgroundColor
+            $0.layer.borderColor = borderColor.cgColor
         }
         
         extend()

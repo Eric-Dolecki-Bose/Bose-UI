@@ -17,3 +17,14 @@ struct DarkTheme: Theme {
     
     let indicatorStyle: UIScrollView.IndicatorStyle = .white
 }
+
+extension DarkTheme {
+    
+    func extend() {
+        
+        // Not doing anything here.
+        UILabel.appearance(whenContainedInInstancesOf: [BoseInstructionPanel.self]).with {
+            $0.textColor = .white
+        }
+    }
+}

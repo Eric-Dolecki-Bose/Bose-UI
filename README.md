@@ -5,6 +5,8 @@
 # Bose-UI
 A collection of often-used UI elements such as buttons, etc. Hopefully will create a private cocoapod repo for this stuff. GothamSSm fonts are integrated into this project too. 
 
+[Bose Buttons](#bose-buttons) | [BoseARDirectionalMark](#boseardirectionalmark) |  [CheckMarkDot](#checkmarkdot)  |  [BoseInstructionalPanel](#boseinstructionPanel)  |  [Screen Brightness / Theme Switching](#screen-brightness-/-theme-switching)  |  [Theme Colors](#theme-colors)
+
 ### Bose Buttons
 
 #### enum Types:

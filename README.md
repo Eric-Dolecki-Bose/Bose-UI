@@ -28,6 +28,8 @@ A collection of often-used UI elements such as buttons, etc. Hopefully will crea
 - Amazon
 
 ### BoseARDirectionalMark
+![directional](./directional.png)
+
 Added a BoseARDirectionalMark class which is a little circle with an arrow (supports up, down, left, right at the moment). Position a mark or marks where you'd like them on screen, and call wasLookedAt() or resetDetection() on each for UI feedback on whether the user is looking in such a direction or not. Discretion of the developer for that functionality.
 
 ```swift
@@ -37,6 +39,8 @@ upDetectionDot.wasLookedAt()
 ```
 
 ### CheckMarkDot
+![checks](./checks.png)
+
 Meant as a visual indicator that an operation was successful. It's essentially a circle with a checkmark inside it. You can adjust the background color, the checkmark color, and whether or not the circle gets a light gray border or not. Very simple.
 
 ```swift
@@ -50,6 +54,8 @@ let check2 = CheckMarkDot()
 
 
 ### BoseInstructionPanel
+![panel](./panel.png)
+
 When you need to ask the user for input, we have a panel that should display at the bottom of the screen when needed. Not theme-supported yet. Simple title and message.
 
 ```swift

@@ -77,6 +77,11 @@ class CheckMarkDotAnimated: UIView {
         animatedLayer.add(animation, forKey: "animateCheckmark")
     }
     
+    public func reset() {
+        animatedLayer?.removeFromSuperlayer()
+        configureView()
+    }
+    
     // MARK: Private methods
     private func configureView() {
         backgroundColor = UIColor.clear

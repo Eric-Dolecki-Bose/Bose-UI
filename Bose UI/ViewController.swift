@@ -50,6 +50,17 @@ class ViewController: UIViewController {
             self.foo.animate(duration: 0.6)
         })
         
+        // Testing this.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+            self.foo.reset()
+        })
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 7.0, execute: {
+            self.foo.animated = true
+            self.foo.animate(duration: 2.0)
+        })
+        
+        
         myScrollView = UIScrollView(frame: CGRect(x: 0, y: 100, width: self.view.frame.width, height: self.view.frame.height - 350))
         myScrollView.layer.borderColor = UIColor.lightGray.cgColor
         myScrollView.layer.borderWidth = 1.0

@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     var upDetectionDot: BoseARDirectionalMark!
     var boseInstruct:   BoseInstructionPanel!
     var checkmark:      CheckMarkDot!
+    var foo:            CheckMarkDotAnimated!
     
     override func viewDidLoad()
     {
@@ -37,6 +38,17 @@ class ViewController: UIViewController {
         upDetectionDot = BoseARDirectionalMark(direction: .Up)
         upDetectionDot.center = CGPoint(x: self.view.frame.width / 2, y: 70)
         //upDetectionDot.wasLookedAt()
+        
+        foo = CheckMarkDotAnimated(frame: CGRect(x: 0, y: 0, width: 40, height: 40),
+                                   initialColor: UIColor.FlatColor.Gray.Iron,
+                                   animatedColor: UIColor.FlatColor.Green.Fern)
+        foo.center = CGPoint(x: upDetectionDot.center.x + 50, y: upDetectionDot.center.y)
+        self.view.addSubview(foo)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+            //foo flag must be set to true before animating.
+            self.foo.animated = true
+            self.foo.animate(duration: 0.6)
+        })
         
         myScrollView = UIScrollView(frame: CGRect(x: 0, y: 100, width: self.view.frame.width, height: self.view.frame.height - 350))
         myScrollView.layer.borderColor = UIColor.lightGray.cgColor

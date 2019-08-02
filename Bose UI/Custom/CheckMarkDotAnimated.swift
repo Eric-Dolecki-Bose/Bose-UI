@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class CheckMarkDotAnimated: UIView {
+class CheckMarkDotAnimated: UIView, CAAnimationDelegate {
 
     // MARK: Public variables
     public var initialLayerColor: UIColor = UIColor.blue {
@@ -77,9 +77,29 @@ class CheckMarkDotAnimated: UIView {
         animatedLayer.add(animation, forKey: "animateCheckmark")
     }
     
-    public func reset() {
-        animatedLayer?.removeFromSuperlayer()
-        configureView()
+    public func reset(withFade: Bool = false)
+    {
+        if !withFade {
+            self.animatedLayer?.removeFromSuperlayer()
+            self.configureView()
+        } else {
+            animatedLayer?.removeAllAnimations()
+            let animcolor = CABasicAnimation(keyPath: "strokeColor")
+            animcolor.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+            animcolor.fromValue         = animatedLayerColor.cgColor
+            animcolor.toValue           = UIColor.clear.cgColor
+            animcolor.duration          = 0.5
+            animcolor.delegate = self
+            animatedLayer!.add(animcolor, forKey: "strokeColor")
+        }
+    }
+    
+    // When animation above completes, we reset this. Try to alleviate a UI flash.
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        if flag {
+            self.animatedLayer?.removeFromSuperlayer()
+            self.configureView()
+        }
     }
     
     // MARK: Private methods

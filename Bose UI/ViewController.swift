@@ -109,7 +109,7 @@ class ViewController: UIViewController {
         self.view.addSubview(upDetectionDot)
         self.view.addSubview(myScrollView)
         
-        // Closure for buttons (testing).
+        // Closure for buttons (testing). Optional method. Shouldn't memory leak. Will they work in an UITableViewCell?
         
         darkButton.add(for: .touchUpInside) {
             print("touched dark button.")

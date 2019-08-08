@@ -68,11 +68,11 @@ class ViewController: UIViewController {
         
         darkButton = BoseButton(width: self.view.frame.width - 80, title: "Dark Button", type: .Dark)
         darkButton.center = CGPoint(x: self.view.frame.midX, y: 30)
-        darkButton.addTarget(self, action: #selector(buttonReleased(sender:)), for: .touchUpInside)
+        //darkButton.addTarget(self, action: #selector(buttonReleased(sender:)), for: .touchUpInside)
         
         lightButton = BoseButton(width: self.view.frame.width - 80, title: "Light Button", type: .Light)
         lightButton.center = CGPoint(x: self.view.frame.midX, y: darkButton.frame.origin.y + darkButton.frame.height + 30)
-        lightButton.addTarget(self, action: #selector(buttonReleased(sender:)), for: .touchUpInside)
+        //lightButton.addTarget(self, action: #selector(buttonReleased(sender:)), for: .touchUpInside)
         
         primaryButton = BoseButton(width: self.view.frame.width - 80, title: "Primary Button", type: .Primary)
         primaryButton.center = CGPoint(x: self.view.frame.midX, y: lightButton.frame.origin.y + lightButton.frame.height + 30)
@@ -108,6 +108,16 @@ class ViewController: UIViewController {
         myScrollView.addSubview(amazonButton)
         self.view.addSubview(upDetectionDot)
         self.view.addSubview(myScrollView)
+        
+        // Closure for buttons (testing).
+        
+        darkButton.add(for: .touchUpInside) {
+            print("touched dark button.")
+        }
+        
+        lightButton.add(for: .touchUpInside) {
+            print("touched light button.")
+        }
         
         // Place colored views to show off the theme colors.
         

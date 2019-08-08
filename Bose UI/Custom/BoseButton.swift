@@ -138,5 +138,37 @@ class BoseButton: UIButton {
         }
     }
     
+    // MARK: - Enable Closure
+    
+    func add (for controlEvents: UIControl.Event, _ closure: @escaping ()->()) {
+        let sleeve = ClosureSleeve(closure)
+        addTarget(sleeve, action: #selector(ClosureSleeve.invoke), for: controlEvents)
+        objc_setAssociatedObject(self, String(ObjectIdentifier(self).hashValue) + String(controlEvents.rawValue), sleeve,
+                                 objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+    }
+    
+    /*
+     let button = UIButton()
+     button.actionHandle(controlEvents: UIControlEvents.TouchUpInside,
+     ForAction:{() -> Void in
+     print("Touch")
+     })
+     */
+    
+    
+    // MARK: -
+    
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+}
+
+class ClosureSleeve {
+    let closure: ()->()
+    
+    init (_ closure: @escaping ()->()) {
+        self.closure = closure
+    }
+    
+    @objc func invoke () {
+        closure()
+    }
 }

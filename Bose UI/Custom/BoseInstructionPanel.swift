@@ -14,6 +14,7 @@ class BoseInstructionPanel: UIView {
     public var myMessage: String!
     public var myTitleLabel: UILabel!
     public var myMessageView: UITextView!
+    private var myMask: UIView!
     
     init(width: CGFloat, title: String, message: String) {
         let frame = CGRect(x: 0, y: 0, width: width, height: 250)
@@ -28,6 +29,12 @@ class BoseInstructionPanel: UIView {
     
     private func generateUI()
     {
+        myMask = UIView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
+        myMask.backgroundColor = UIColor.blue
+        myMask.layer.cornerRadius = 200
+        myMask.center = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        self.mask = myMask
+        
         myTitleLabel = UILabel(frame: CGRect(x: 30, y: 45, width: self.frame.width - 20, height: 20))
         myTitleLabel.font = UIFont(name: "GothamSSm-Bold", size: 16.0)
         myTitleLabel.textColor = UIColor.black
@@ -55,6 +62,20 @@ class BoseInstructionPanel: UIView {
     }
     
     // Destroy me when I'm not needed any longer.
+    public func remove(withAnimation: Bool = false, timing: TimeInterval = 0.5) {
+        if withAnimation == true {
+            
+            UIView.animate(withDuration: timing, animations: {
+                self.myMask.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+            }) { (success) in
+                self.removeFromSuperview()
+            }
+            
+        } else {
+            self.removeFromSuperview()
+        }
+    }
+    
     public func remove() {
         self.removeFromSuperview()
     }

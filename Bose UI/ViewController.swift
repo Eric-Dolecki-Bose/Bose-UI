@@ -126,6 +126,11 @@ class ViewController: UIViewController {
         boseInstruct.frame.origin.y = amazonButton.frame.origin.y + amazonButton.frame.height + 20
         myScrollView.addSubview(boseInstruct)
         
+        // This shows the masking being scaled down to hide the panel. Optional method.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+            self.boseInstruct.remove(withAnimation: true, timing: 0.5)
+        })
+        
         checkmark = CheckMarkDot()
         checkmark.center = CGPoint(x: self.view.frame.midX, y: 0)
         checkmark.frame.origin.y = boseInstruct.frame.origin.y + boseInstruct.frame.height + 20
